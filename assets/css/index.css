@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  background-color: lightblue;
+}
+
+header {
+  min-height: 100vh;
+  max-width: 599px;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list * + * {
+  margin-top: 1.25rem;
+}
+
+.nav__item {
+  display: block;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  outline: 2px solid salmon;
+}
